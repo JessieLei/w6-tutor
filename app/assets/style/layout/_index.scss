@@ -1,5 +1,63 @@
-.index__h1 {
-  color:#00cc99;
-  font-size: 20px;
-  font-weight: 400;
+.text-gradient {
+  background: linear-gradient(180deg, #09acf5, #62db54); /* 設定漸層背景 */
+  background-clip: text; /* 設定背景裁切模式為文字  */
+  color: transparent; /* 將文字顏色指定為透明 */
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.link-text:hover {
+  color: #62db54;
+}
+
+.navbar-border-green {
+  height: 2px;
+  background-color: $secondary;
+  width: 50vw;
+}
+.navbar-border-blue {
+  height: 2px;
+  background-color: $success;
+  width: 50vw;
+}
+
+.fs-md-6 {
+  @include md {
+    font-size: $h6-font-size !important;
+  }
+}
+
+.navbar-brand {
+  background-image: url(../images/logo2.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 24px;
+  width: 24px;
+  @include sm {
+    background-image: url(../images/logo.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 72px;
+    width: 175px;
+  }
+}
+
+.dropdown {
+  a {
+    color: #62db54;
+    text-decoration: none !important;
+  }
+  &-toggle::after {
+    display: none;
+  }
+  .dropdown-item {
+    a {
+      color: #fff;
+    }
+  }
+  @include sm {
+    display: none;
+  }
 }
