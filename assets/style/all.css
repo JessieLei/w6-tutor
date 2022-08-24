@@ -15169,6 +15169,7 @@ fieldset:disabled .btn {
 }
 
 h1, .h1 {
+  margin-bottom: 0 !important;
   font-size: 24px;
 }
 
@@ -15176,6 +15177,67 @@ h1, .h1 {
   h1, .h1 {
     font-size: 48px;
   }
+}
+
+.txt-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#09acf5), to(#62db54));
+  background: -o-linear-gradient(top, #09acf5, #62db54);
+  background: linear-gradient(180deg, #09acf5, #62db54);
+  /* 將背景裁切成只有文字部分 */
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* 因為 Chrome 還沒有很好的支援度，所以要加上 webkit 前綴 */
+  color: transparent;
+}
+
+.square {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+
+.w-50px {
+  width: 50px;
+}
+
+.fz-28 {
+  font-size: 28px;
+}
+
+.fz-40 {
+  font-size: 40px;
+}
+
+.fz-48 {
+  font-size: 48px;
+}
+
+.rounded-12 {
+  border-radius: 12px;
+}
+
+.left-40 {
+  left: 40px;
+}
+
+.rounded-24 {
+  border-radius: 24px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+@media (min-width: 576px) {
+  .mb-40 {
+    margin-bottom: 80px;
+  }
+}
+
+.translateY-50 {
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 body {
@@ -15309,53 +15371,6 @@ body {
     background-image: url(../images/bg_home.jpg);
     height: 680px;
   }
-}
-
-.txt-gradient {
-  background: -webkit-gradient(linear, left top, left bottom, from(#09acf5), to(#62db54));
-  background: -o-linear-gradient(top, #09acf5, #62db54);
-  background: linear-gradient(180deg, #09acf5, #62db54);
-  /* 將背景裁切成只有文字部分 */
-  background-clip: text;
-  -webkit-background-clip: text;
-  /* 因為 Chrome 還沒有很好的支援度，所以要加上 webkit 前綴 */
-  color: transparent;
-}
-
-.square {
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-}
-
-.w-50px {
-  width: 50px;
-}
-
-.fz-28 {
-  font-size: 28px;
-}
-
-.fz-40 {
-  font-size: 40px;
-}
-
-.fz-48 {
-  font-size: 48px;
-}
-
-.rounded-12 {
-  border-radius: 12px;
-}
-
-.left-40 {
-  left: 40px;
-}
-
-.translateY-50 {
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .feature-card {
@@ -15873,10 +15888,6 @@ body {
   font-size: 100px;
 }
 
-h1, .h1 {
-  margin-bottom: 0 !important;
-}
-
 .class-list a:hover {
   border-color: #62db54 !important;
 }
@@ -15897,20 +15908,6 @@ h1, .h1 {
 
 .linear-gradient:hover {
   opacity: 0.6;
-}
-
-.rounded-24 {
-  border-radius: 24px;
-}
-
-.mb-40 {
-  margin-bottom: 40px;
-}
-
-@media (min-width: 576px) {
-  .mb-40 {
-    margin-bottom: 80px;
-  }
 }
 
 /*# sourceMappingURL=all.css.map */
