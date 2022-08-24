@@ -10,48 +10,6 @@
   }
 }
 
-.txt-gradient {
-  background: linear-gradient(180deg, $success, $secondary);
-  /* 將背景裁切成只有文字部分 */
-  background-clip: text;
-  -webkit-background-clip: text; /* 因為 Chrome 還沒有很好的支援度，所以要加上 webkit 前綴 */
-  color: transparent;
-}
-
-.square {
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-}
-
-.w-50px {
-  width: 50px;
-}
-
-.fz-28 {
-  font-size: 28px;
-}
-
-.fz-40 {
-  font-size: 40px;
-}
-
-.fz-48 {
-  font-size: 48px;
-}
-
-.rounded-12 {
-  border-radius: 12px;
-}
-
-.left-40 {
-  left: 40px;
-}
-
-.translateY-50 {
-  transform: translateY(-50%);
-}
-
 .feature-card {
   border: 1px solid transparent; //防止hover抖動
   .material-icons {
@@ -221,7 +179,7 @@
       border-radius: 50px;
       bottom: 100%;
       right: 24px;
-      transform: translateY(55%); //物件向下移動50%自身高度
+      transform: translateY(55%); //物件向下移動55%自身高度
       @include md {
         position: absolute;
         width: 60px;

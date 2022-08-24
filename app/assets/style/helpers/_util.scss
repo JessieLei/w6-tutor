@@ -1,0 +1,52 @@
+.txt-gradient {
+  background: linear-gradient(180deg, $success, $secondary);
+  /* 將背景裁切成只有文字部分 */
+  background-clip: text;
+  -webkit-background-clip: text; /* 因為 Chrome 還沒有很好的支援度，所以要加上 webkit 前綴 */
+  color: transparent;
+}
+
+.square {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+
+.w-50px {
+  width: 50px;
+}
+
+.fz-28 {
+  font-size: 28px;
+}
+
+.fz-40 {
+  font-size: 40px;
+}
+
+.fz-48 {
+  font-size: 48px;
+}
+
+.rounded-12 {
+  border-radius: 12px;
+}
+
+.left-40 {
+  left: 40px;
+}
+
+.rounded-24 {
+  border-radius: 24px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+  @include sm {
+    margin-bottom: 80px;
+  }
+}
+
+.translateY-50 {
+  transform: translateY(-50%);
+}
