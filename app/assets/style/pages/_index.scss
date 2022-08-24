@@ -1,0 +1,289 @@
+.index-banner {
+  background-image: url(../images/bg_home_mobile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 336px;
+  @include md {
+    background-image: url(../images/bg_home.jpg);
+    height: 680px;
+  }
+}
+
+.txt-gradient {
+  background: linear-gradient(180deg, $success, $secondary);
+  /* 將背景裁切成只有文字部分 */
+  background-clip: text;
+  -webkit-background-clip: text; /* 因為 Chrome 還沒有很好的支援度，所以要加上 webkit 前綴 */
+  color: transparent;
+}
+
+.square {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+
+.w-50px {
+  width: 50px;
+}
+
+.fz-28 {
+  font-size: 28px;
+}
+
+.fz-40 {
+  font-size: 40px;
+}
+
+.fz-48 {
+  font-size: 48px;
+}
+
+.rounded-12 {
+  border-radius: 12px;
+}
+
+.left-40 {
+  left: 40px;
+}
+
+.translateY-50 {
+  transform: translateY(-50%);
+}
+
+.feature-card {
+  border: 1px solid transparent; //防止hover抖動
+  .material-icons {
+    @include md {
+      color: #fff;
+    }
+  }
+  @include md {
+    background-color: $primary !important;
+    color: #fff;
+    opacity: 0.5;
+  }
+  &:hover {
+    @include md {
+      opacity: 1;
+      background-color: $dark !important;
+      border: 1px solid $secondary;
+      .material-icons {
+        background: linear-gradient(180deg, $success, $secondary);
+        /* 將背景裁切成只有文字部分 */
+        background-clip: text;
+        -webkit-background-clip: text; /* 因為 Chrome 還沒有很好的支援度，所以要加上 webkit 前綴 */
+        color: transparent;
+      }
+    }
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  a {
+    width: 158px;
+  }
+}
+
+.special-content-1 {
+  @include index-special-img("../images/info01.jpg");
+}
+.special-content-2 {
+  @include index-special-img("../images/info02.jpg");
+}
+.special-content-3 {
+  @include index-special-img("../images/info03.jpg");
+}
+.special-content-4 {
+  @include index-special-img("../images/info04.jpg");
+}
+
+.special > li {
+  @include xl {
+    padding: 218px 0;
+  }
+}
+
+.squareRounded {
+  display: none;
+  width: 32px;
+  height: 32px;
+  &-topLeft {
+    border-top: 2px solid #62db54;
+    border-left: 2px solid #62db54;
+    border-top-left-radius: 10px;
+  }
+  &-topRight {
+    border-top: 2px solid #62db54;
+    border-right: 2px solid #62db54;
+    border-top-right-radius: 10px;
+  }
+  &-bottomLeft {
+    border-bottom: 2px solid #62db54;
+    border-left: 2px solid #62db54;
+    border-bottom-left-radius: 10px;
+  }
+  &-bottomRight {
+    border-bottom: 2px solid #62db54;
+    border-right: 2px solid #62db54;
+    border-bottom-right-radius: 10px;
+  }
+}
+.card:hover {
+  @include lg {
+    .squareRounded {
+      display: block;
+    }
+  }
+}
+
+// 背景圖
+.feedback {
+  background-image: url(../images/bg_share.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 717px;
+  @include md {
+    height: 733px;
+  }
+}
+
+.swiper {
+  &-img {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: 1px solid #7c7e77;
+      border-radius: 24px;
+      top: 10px;
+      left: -10px;
+      z-index: -1;
+    }
+    @include md {
+      width: 60%;
+      height: 90%;
+    }
+  }
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+  }
+  .card {
+    position: absolute;
+    width: 100%;
+    padding: 24px;
+    border-radius: 24px 24px 24px 0;
+    bottom: 56px;
+    h3 {
+      font-size: 18px;
+    }
+    @include md {
+      position: absolute;
+      width: 45%;
+      padding: 32px;
+      bottom: 0;
+      right: 0;
+    }
+    .student {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      border-radius: 50px;
+      bottom: 100%;
+      right: 24px;
+      transform: translateY(55%); //物件向下移動50%自身高度
+      @include md {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        bottom: 100%;
+        right: 8px;
+        transform: translateY(50%); //物件向下移動50%自身高度
+      }
+      @include lg {
+        width: 100px;
+        height: 100px;
+        right: 32px;
+      }
+    }
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    content: ""; //隱藏原本的大箭頭
+  }
+
+  &-button-next,
+  &-button-prev {
+    position: unset; //繼承父層或還原初始值
+    width: 24px;
+    height: 24px;
+    margin-top: 0;
+    color: #62db54;
+  }
+
+  .swiper-pagination {
+    position: unset; //繼承父層或還原初始值
+    width: auto;
+    .swiper-pagination-bullet {
+      background-color: #62db54;
+      opacity: initial; //還原默認值
+      &-active {
+        width: 16px;
+        border-radius: 100px;
+      }
+    }
+  }
+
+  &-buttons {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    position: absolute;
+    @include md {
+      left: 30%;
+    }
+  }
+}
+
+.feedback-height {
+  height: 500px;
+  @include md {
+    height: 429px;
+  }
+}
+
+.join-us-icon {
+  font-size: 100px;
+}

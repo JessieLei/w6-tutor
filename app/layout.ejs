@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%- title %></title>
+    <link rel="shortcut icon" href="assets/images/logo2.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +18,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="./assets/style/all.css" />
+    
   </head>
 
   <body>
@@ -28,7 +34,7 @@
 
         <a
           class="navbar-brand d-inline-block"
-          href="#"
+          href="index.html"
   
         ></a>
 
@@ -36,7 +42,7 @@
 
           <ul class="list-unstyled mb-0 d-none d-sm-flex">
             <li class="me-5"> <a href="index.html" class="fs-7 text-decoration-none link-text">首頁</a></li>
-            <li class="me-5"> <a href="index.html" class="fs-7 text-decoration-none link-text">課程介紹</a></li>
+            <li class="me-5"> <a href="class.html" class="fs-7 text-decoration-none link-text">課程介紹</a></li>
             <li> <a href="index.html" class="fs-7 text-decoration-none link-text"><span class="me-1 align-top material-icons">
               account_circle
               </span>登入</a></li>
@@ -52,8 +58,8 @@
             </a>
           
             <ul class="list-unstyled dropdown">
-              <li><a class="py-6" href="#">首頁</a></li>
-              <li><a class="py-6" href="#">課程介紹</a></li>
+              <li><a class="py-6" href="index.html">首頁</a></li>
+              <li><a class="py-6" href="class.html">課程介紹</a></li>
               <li><a class="py-6" href="#"><span class="me-1 align-top material-icons">
                 account_circle
                 </span>登入</a></li>
@@ -76,6 +82,8 @@
       </div>
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>

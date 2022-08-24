@@ -1,0 +1,72 @@
+@mixin xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin index-special-img($url) {
+  position: relative;
+  z-index: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.1;
+  }
+  &:hover::before {
+    opacity: 0.6;
+  }
+  &:hover .special-icon {
+    opacity: 1;
+    color: $secondary !important;
+  }
+  &:hover .special-border {
+    width: 70px;
+    border-color: $secondary !important;
+    transition: 0.5s;
+  }
+  &:hover .special-txt {
+    opacity: 1;
+  }
+  .special-icon {
+    opacity: 0.5;
+  }
+
+  .special-txt {
+    opacity: 0.5;
+  }
+
+  .special-border {
+    transition: 0.5s;
+  }
+  @include xl {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+    padding-top: 218px !important;
+    padding-bottom: 218px !important;
+  }
+}

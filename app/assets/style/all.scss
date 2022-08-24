@@ -2,5 +2,9 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
-@import "mixin";
-@import "./layout/index.scss";
+@import "./helpers/mixin";
+@import "./helpers/base";
+@import "./helpers/util";
+@import "./layout/layout.scss";
+@import "./pages/index";
+@import "./pages/class";

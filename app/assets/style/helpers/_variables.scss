@@ -90,6 +90,10 @@ $theme-colors: (
   "dark": $dark,
   "text": $white,
   "primaryDarker": $primary-darker,
+  "white": $white,
+  "black": #202020,
+  "gray-light": #c1c1c1,
+  "000000": #000000,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -258,11 +262,31 @@ $spacer: 1rem !default;
 $spacers: (
   0: 0,
   1: $spacer * 0.25,
+  // 4px
   2: $spacer * 0.5,
+  // 8px
   3: $spacer,
+  // 16px
   4: $spacer * 1.5,
+  //24px
   5: $spacer * 3,
+  // 48px
   6: $spacer * 0.75,
+  // 12px
+  7: $spacer * 2,
+  // 32px
+  8: $spacer * 1.75,
+  // 28px
+  9: $spacer * 3.125,
+  // 50px
+  10: $spacer * 5.31,
+  // 85px
+  11: $spacer * 2.5,
+  // 40px
+  12: $spacer * 5,
+  // 80px
+  13: $spacer * 4,
+  // 64px
 ) !default;
 
 $negative-spacers: if(
@@ -378,7 +402,7 @@ $border-color: $gray-300 !default;
 // scss-docs-end border-variables
 
 // scss-docs-start border-radius-variables
-$border-radius: 0.25rem !default;
+$border-radius: 0.5rem !default;
 $border-radius-sm: 0.2rem !default;
 $border-radius-lg: 0.3rem !default;
 $border-radius-pill: 50rem !default;
@@ -423,11 +447,11 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: "Azeret Mono", "Noto Sans TC", system-ui, -apple-system,
+$font-family-sans-serif: "Noto Sans TC", "Azeret Mono", system-ui, -apple-system,
   "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",
   sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
   "Noto Color Emoji" !default;
-$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+$font-family-monospace: "Azeret Mono", SFMono-Regular, Menlo, Monaco, Consolas,
   "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base: var(--#{$variable-prefix}font-sans-serif) !default;
@@ -452,7 +476,7 @@ $line-height-base: 1.5 !default;
 $line-height-sm: 1.25 !default;
 $line-height-lg: 2 !default;
 
-$h1-font-size: $font-size-base * 2.5 !default;
+$h1-font-size: $font-size-base * 3 !default;
 $h2-font-size: $font-size-base * 2 !default;
 $h3-font-size: $font-size-base * 1.75 !default;
 $h4-font-size: $font-size-base * 1.5 !default;
@@ -463,13 +487,23 @@ $h6-font-size: $font-size-base !default;
 // scss-docs-start font-sizes
 $font-sizes: (
   1: $h1-font-size,
+  // 48px
   2: $h2-font-size,
+  // 32px
   3: $h3-font-size,
+  // 28px
   4: $h4-font-size,
+  // 24px
   5: $h5-font-size,
+  // 20px
   6: $h6-font-size,
+  // 16px
   7: $font-size-base * 1.125,
+  // 18px
   8: $font-size-base * 0.75,
+  // 12px
+  9: $font-size-base * 0.875,
+  // 14px
 ) !default;
 // scss-docs-end font-sizes
 
