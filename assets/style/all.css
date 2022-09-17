@@ -15373,6 +15373,32 @@ body {
   }
 }
 
+.index-banner-txt::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+.index-banner-txt::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
 .feature-card {
   border: 1px solid transparent;
 }
@@ -15407,6 +15433,14 @@ body {
     /* 因為 Chrome 還沒有很好的支援度，所以要加上 webkit 前綴 */
     color: transparent;
   }
+}
+
+.recommend-card {
+  border: 2px solid transparent;
+}
+
+.recommend-card:hover {
+  border: 2px solid #62db54;
 }
 
 .swiper {
@@ -15908,6 +15942,14 @@ body {
 
 .linear-gradient:hover {
   opacity: 0.6;
+}
+
+.all-course:hover {
+  background-color: #62db54;
+  color: #fff !important;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
 }
 
 /*# sourceMappingURL=all.css.map */
