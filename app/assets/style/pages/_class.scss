@@ -21,3 +21,9 @@
     opacity: 0.6;
   }
 }
+
+.all-course:hover {
+  background-color: $secondary;
+  color: $white !important;
+  transition: 0.2s;
+}
